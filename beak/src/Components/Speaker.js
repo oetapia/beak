@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Speaker() {
+function Speaker({people}) {
   return (
-	<div>Person</div>
+	<>
+	<li class="list-group-item"><span class="icon c1">{people[0].initial}</span>{people[0].name}</li>
+	</>
   )
 }
 

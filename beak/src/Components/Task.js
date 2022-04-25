@@ -14,10 +14,10 @@ function Task({tasks, dates, level}) {
 			<div className="card-body">
 				<form >
 					<fieldset className="row" />
-						<legend>Design Screens</legend>
+						<legend>{tasks[0].title}</legend>
 					<div className="mb-3 col">
 						<select id="person" className="form-select">
-						<option>{tasks}</option>
+						<option>Esteban</option>
 						<option>Teo</option>
 						<option>Damien</option>
 						</select>

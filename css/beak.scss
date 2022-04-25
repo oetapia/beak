@@ -62,6 +62,15 @@ body {
 		border-color: transparent;
 	}
 
+	.btn-primary {
+		background-color: darken($main,10%);
+		border-color: darken($main,15%);
+		&:hover {
+			background-color: darken($main,5%);
+			border-color: darken($main,10%);
+		}
+	}
+
 } //overwrite bootstrap
 
 .icon {

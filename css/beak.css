@@ -56,6 +56,16 @@ body .list-group-item {
   border-color: transparent;
 }
 
+body .btn-primary {
+  background-color: #d4f2c3;
+  border-color: #c5edae;
+}
+
+body .btn-primary:hover {
+  background-color: #e3f6d8;
+  border-color: #d4f2c3;
+}
+
 .icon {
   border-radius: 100%;
   padding: 0.1em 0.5em;

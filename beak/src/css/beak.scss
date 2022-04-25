@@ -1,0 +1,97 @@
+$main: #F2FBED;
+$dark: #30593E;
+$danger: #FF8C8C;
+$warning: #FEF285;
+$color1: #C3FFF1;
+$color2: #C0E5FF;
+$color3: #FED3FF;
+
+body {
+	background-color: $main;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: $dark;
+
+	h1 {
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-size: 1em;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+
+
+	.card {
+		background-color: darken($main,5%);
+
+		.card-header {
+			justify-content: space-between;
+			display: flex;
+		}
+	}
+
+
+	.form-select {
+		font-weight: 300;
+		background-color:lighten($main,3%);
+		font-size: .9em;
+	}
+
+	.card.danger {
+		border-left: $danger 3px solid;
+	}
+
+
+	.card.warning {
+		border-left: $warning 3px solid;
+	}
+
+	legend {
+		font-size: 1.2em;
+	}
+
+	.list-group-item {
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	.btn-primary {
+		background-color: darken($main,10%);
+		border-color: darken($main,15%);
+		&:hover {
+			background-color: darken($main,5%);
+			border-color: darken($main,10%);
+		}
+	}
+
+} //overwrite bootstrap
+
+.icon {
+	border-radius: 100%;
+	padding: 0.1em 0.5em;
+	margin-right: 0.4em;
+	font-weight: 500;
+}
+
+.c1 {
+	background-color: $color1;
+}
+
+.c2 {
+	background-color: $color2;
+}
+
+.c3 {
+	background-color: $color3;
+}
+
+.user {
+	font-style: italic;
+}

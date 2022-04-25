@@ -1,0 +1,91 @@
+body {
+  background-color: #F2FBED;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #30593E;
+}
+
+body h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+body h2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+body h3 {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+body .card {
+  background-color: #e3f6d8;
+}
+
+body .card .card-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .form-select {
+  font-weight: 300;
+  background-color: #fbfefa;
+  font-size: .9em;
+}
+
+body .card.danger {
+  border-left: #FF8C8C 3px solid;
+}
+
+body .card.warning {
+  border-left: #FEF285 3px solid;
+}
+
+body legend {
+  font-size: 1.2em;
+}
+
+body .list-group-item {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+body .btn-primary {
+  background-color: #d4f2c3;
+  border-color: #c5edae;
+}
+
+body .btn-primary:hover {
+  background-color: #e3f6d8;
+  border-color: #d4f2c3;
+}
+
+.icon {
+  border-radius: 100%;
+  padding: 0.1em 0.5em;
+  margin-right: 0.4em;
+  font-weight: 500;
+}
+
+.c1 {
+  background-color: #C3FFF1;
+}
+
+.c2 {
+  background-color: #C0E5FF;
+}
+
+.c3 {
+  background-color: #FED3FF;
+}
+
+.user {
+  font-style: italic;
+}
+/*# sourceMappingURL=beak.css.map */

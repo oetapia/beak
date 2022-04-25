@@ -1,0 +1,38 @@
+import React from 'react'
+import {Container, Row, Col} from 'react-bootstrap'
+import Speaker from '../Components/Speaker';
+import Summary from '../Components/Summary';
+import Task from '../Components/Task'
+
+function Report() {
+
+	var tasks = ['hello','nah'];
+	var dates = '24 Apr';
+
+  return (
+	<>
+
+		<Container>
+			<Row>
+				<Col>
+					<p class="badge bg-primary">ID: 233</p>
+					<h1>Report</h1>	
+					<p class="date small">  Berlin, 23 April. 17:23h - 17:46h</p>
+					<Summary></Summary>
+
+					<Speaker></Speaker>
+
+					
+					<Task tasks={tasks[0]} dates={dates} level={'danger'}></Task>
+				</Col>
+			</Row>
+
+			
+		</Container>
+		
+	</>
+
+  )
+}
+
+export default Report

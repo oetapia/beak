@@ -48,7 +48,7 @@
 							<h2>Summary</h2>
 							<ul>
 								<li>
-									Teo explains his experiences as a manager.
+									<span class="user">Teo</span> explains his experiences as a manager.
 								</li>
 								<li>
 									Discussions about the pending tasks and what should be first priority. 
@@ -76,7 +76,7 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<div class="card danger">
+							<div class="card danger my-3">
 								<div class="card-header">
 									<h3 class="d-inline-block me-5">Task</h3>
 									 <img  src="img/edit.svg" alt="Edit">
@@ -88,15 +88,45 @@
 										<div class="mb-3 col">
 											<select id="person" class="form-select">
 											<option>Esteban</option>
+											<option>Teo</option>
+											<option>Damien</option>
 											</select>
 										</div>
 										<div class="mb-3 col">
 											<select id="date" class="form-select">
 											<option>24 Apr</option>
+											<option>25 Apr</option>
 											</select>
-										</div>  
-										  
+										</div>  									 
+									  </form>
+								</div>
+							</div>
+							<div class="card warning my-3">
+								<div class="card-header">
+									<h3 class="d-inline-block me-5">Task</h3>
+									 <button id="btn" class="btn">
+										 <img src="img/edit.svg" alt="Edit">
+									</button>
 										 
+								</div>
+								<div class="card-body">
+									<form >
+										<fieldset class="row" >
+										  <legend>Business Plan</legend>
+										<div class="mb-3 col">
+											<select id="person" class="form-select">
+											<option>Florian</option>
+											<option>Johannes</option>
+											<option>Gero</option>
+											<option>Felipe</option>
+											</select>
+										</div>
+										<div class="mb-3 col">
+											<select id="date" class="form-select">
+											<option>24 Apr</option>
+											<option>25 Apr</option>
+											</select>
+										</div>  									 
 									  </form>
 								</div>
 							</div>
@@ -105,48 +135,14 @@
 				</div>
 			</section>
 
-			<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js">
-
-			</script>
-
-			<section class="chart my-3">
+			<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+			<section class="chart my-3 p-3">
 				<canvas id="myChart" width="200" height="200"></canvas>
-				<script>
-				const ctx = document.getElementById('myChart').getContext('2d');
-				const myChart = new Chart(ctx, {
-					type: 'pie',
-					data: {
-						labels: ['Teo', 'Damien', 'Esteban'],
-						datasets: [{
-							label: 'time',
-							data: [16, 43, 41],
-							backgroundColor: [
-								'rgba(195, 255, 241, 0.2)',
-								'rgba(192, 229, 255, 0.2)',
-								'rgba(254, 211, 255, 0.2)',
-							],
-							borderColor: [
-							'rgba(195, 255, 241, 0.9)',
-								'rgba(192, 229, 255, 0.9)',
-								'rgba(254, 211, 255, 0.9)',
-							],
-							borderWidth: 1
-						}]
-					},
-					options: {
-						scales: {
-							y: {
-								grid: {
-								drawBorder: false,
-								},
-								beginAtZero: true
-							}
-						}
-					}
-				});
-				</script>
 			</section>
 		</main>
 		<script src="js/bootstrap.js"></script>
+		<script src="js/beak.js"></script>
+		<script src="js/chart.js"></script>
+
 	</body>
 </html>

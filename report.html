@@ -4,12 +4,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/beak.css" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
-				  <a class="navbar-brand" href="#">Navbar</a>
+				  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="beak.ai" width="100px"></a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -24,25 +29,124 @@
 					  <li class="nav-item">
 						<a class="nav-link" href="#">Pricing</a>
 					  </li>
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  Dropdown link
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						  <li><a class="dropdown-item" href="#">Action</a></li>
-						  <li><a class="dropdown-item" href="#">Another action</a></li>
-						  <li><a class="dropdown-item" href="#">Something else here</a></li>
-						</ul>
-					  </li>
+					 
 					</ul>
 				  </div>
 				</div>
 			  </nav>
 		</header>
-		<main>	
-			<h1>Meeting Minutes</h1>
-			<em>Berlin, 23 April. 17:23h - 17:46h</em>
+		<main class="container">
+			<section>
+				<div class="row">
+					<div class="col-12">
+
+						<h1>Meeting Minutes</h1>
+						<p class="date small">Berlin, 23 April. 17:23h - 17:46h</p>
+						
+						<section>
+
+							<h2>Summary</h2>
+							<ul>
+								<li>
+									Teo explains his experiences as a manager.
+								</li>
+								<li>
+									Discussions about the pending tasks and what should be first priority. 
+								</li>
+							</ul>
+	
+							<ul class="participants list-group mb-3 list-group-horizontal">
+								<li class="list-group-item"><span class="icon c1">T</span>Teo</li>
+								<li class="list-group-item"><span class="icon c2">D</span> Damien</li>
+								<li class="list-group-item"><span class="icon c3">E</span> Esteban</li>
+							</ul>
+						</section>
+
+						<h2>
+							Decisions
+						</h2>
+						<ol>
+							<li>
+								Write down the product concept in a google doc
+							</li>
+							<li>
+								We will assign tasks as two separate teams: Business and Development
+							</li>
+						</ol>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="card danger">
+								<div class="card-header">
+									<h3 class="d-inline-block me-5">Task</h3>
+									 <img  src="img/edit.svg" alt="Edit">
+								</div>
+								<div class="card-body">
+									<form >
+										<fieldset class="row" >
+										  <legend>Design Screens</legend>
+										<div class="mb-3 col">
+											<select id="person" class="form-select">
+											<option>Esteban</option>
+											</select>
+										</div>
+										<div class="mb-3 col">
+											<select id="date" class="form-select">
+											<option>24 Apr</option>
+											</select>
+										</div>  
+										  
+										 
+									  </form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js">
+
+			</script>
+
+			<section class="chart my-3">
+				<canvas id="myChart" width="200" height="200"></canvas>
+				<script>
+				const ctx = document.getElementById('myChart').getContext('2d');
+				const myChart = new Chart(ctx, {
+					type: 'pie',
+					data: {
+						labels: ['Teo', 'Damien', 'Esteban'],
+						datasets: [{
+							label: 'time',
+							data: [16, 43, 41],
+							backgroundColor: [
+								'rgba(195, 255, 241, 0.2)',
+								'rgba(192, 229, 255, 0.2)',
+								'rgba(254, 211, 255, 0.2)',
+							],
+							borderColor: [
+							'rgba(195, 255, 241, 0.9)',
+								'rgba(192, 229, 255, 0.9)',
+								'rgba(254, 211, 255, 0.9)',
+							],
+							borderWidth: 1
+						}]
+					},
+					options: {
+						scales: {
+							y: {
+								grid: {
+								drawBorder: false,
+								},
+								beginAtZero: true
+							}
+						}
+					}
+				});
+				</script>
+			</section>
 		</main>
-		
+		<script src="js/bootstrap.js"></script>
 	</body>
 </html>

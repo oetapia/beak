@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EACJ,gBAAgB,EAJV,OAAO;CAKb",
+    "sources": [
+        "beak.scss"
+    ],
+    "names": [],
+    "file": "beak.css"
+}

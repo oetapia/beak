@@ -1,9 +1,12 @@
-btn.onclick = (event) => {
+edit.onclick = (event) => {
 	event.preventDefault();
 	// show the selected index
-	console.log(event);
+	alert(event);
 };
 
+function editForm () {
+	alert('edit');
+}
 
 function sendAPI () {
 	console.log('sending');

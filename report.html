@@ -39,9 +39,9 @@
 			<section>
 				<div class="row">
 					<div class="col-12">
-
+						<p class="badge bg-primary">ID: 233</p>
 						<h1>Meeting Minutes</h1>
-						<p class="date small">Berlin, 23 April. 17:23h - 17:46h</p>
+						<p class="date small">  Berlin, 23 April. 17:23h - 17:46h</p>
 						
 						<section>
 
@@ -79,7 +79,9 @@
 							<div class="card danger my-3">
 								<div class="card-header">
 									<h3 class="d-inline-block me-5">Task</h3>
-									 <img  src="img/edit.svg" alt="Edit">
+									<button id="edit" class="btn">
+										<img src="img/edit.svg" alt="Edit">
+								   </button>
 								</div>
 								<div class="card-body">
 									<form >
@@ -104,7 +106,7 @@
 							<div class="card warning my-3">
 								<div class="card-header">
 									<h3 class="d-inline-block me-5">Task</h3>
-									 <button id="btn" class="btn">
+									 <button id="edit2" onclick="editForm()" class="btn">
 										 <img src="img/edit.svg" alt="Edit">
 									</button>
 										 
@@ -143,6 +145,7 @@
 		<script src="js/bootstrap.js"></script>
 		<script src="js/beak.js"></script>
 		<script src="js/chart.js"></script>
+		<script src="js/recorder.js"></script>
 
 	</body>
 </html>

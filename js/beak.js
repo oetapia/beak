@@ -1,6 +1,6 @@
 
 // data to test JSON returns
-var data = '[{"a":1,"b":2,"c":3},{"a":4,"b":5,"c":6},{"a":7,"b":8,"c":9}]';
+var data = '[{"person":"Teo","Time":45},{"person":"Damien","Time":10},{"person":"Esteban","Time":22}]';
 
 // test function with props
 edit.onclick = (event) => {
@@ -20,14 +20,21 @@ function addData(data) {
 } 
 var data = JSON.parse(data);
 
+
+
 // function to replace content in HTML
 function fillData() {
-	data.forEach(e => console.log(e));
-	var tag = document.createElement("li");
-	var text = document.createTextNode(JSON.stringify(data));
-	tag.appendChild(text);
-	var element = document.getElementById("participants");
-	element.appendChild(tag);
+	var tag = [];
+	data.forEach(
+		function newItem(w) {
+			tag = document.createElement("li");
+			var text = document.createTextNode(w.person);
+			tag.appendChild(text);
+			var element = document.getElementById("participants");
+			element.appendChild(tag);
+		}
+		);
+	
 	addData(data);
 }
 
